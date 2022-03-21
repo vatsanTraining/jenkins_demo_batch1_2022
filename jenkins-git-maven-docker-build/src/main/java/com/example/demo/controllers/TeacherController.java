@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -37,6 +39,14 @@ public class TeacherController {
 	
 	@GetMapping(path = "/teachers/{id}")
 	public String getTeachersById(@PathVariable("id") int id) {
+		
+	 
+	   return "Best Teacher";
+	}
+	
+	
+	@PostMapping(path = "/teachers/{id}")
+	public String addTeacher(@RequestBody String teacher) {
 		
 	 
 	   return "Best Teacher";
