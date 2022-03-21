@@ -33,5 +33,13 @@ public class TeacherController {
 	  }
 	   return list.toString();
 	}
+
 	
+	@GetMapping(path = "/teachers/{id}")
+	public String getTeachersById(@PathVariable("id") int id) {
+		
+	 
+	   return "Best Teacher";
+	}
 }
+
